@@ -1,0 +1,708 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: cursive;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: rgb(187, 190, 190);
+    position: sticky;
+    top: 0;
+       
+}
+
+html{
+    scroll-padding-top: 5rem;
+}
+.logo img{
+    height: 60px;
+    width: 60px;
+    
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+.navlinks{
+    height: 50px;
+    width: 60%;
+    
+    position: absolute;
+    left: 40%;
+    top: 15px;
+
+}
+a{
+    display: inline-flex;
+    position: relative;
+    color: black;
+    margin-top: 20px;
+    font-size: larger;
+    margin-left: 50px;
+}
+
+/* Section 1 */
+.Home{
+    min-height: 42rem;
+    background-image: url(images/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+   
+    
+}
+.karate{
+    height: 600px;
+    width: 70%;
+    top: 10%;
+    left: 1%;
+}
+.karate h1{
+    height: 40px;
+    width: 30%;
+    margin-top: 90px;
+    margin-left: 25%;
+    font-size: 30px;
+}
+.karate p{
+    height: 100px;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: 10%;
+    line-height: 1.5;
+    font-size: 20px;
+    align-items: center;
+    
+}
+.karate button{
+    padding: 10px 30px;
+    
+    margin-top: 20px;
+    margin-left: 28%;
+    font-size: 20px;
+    
+    background-color: rgb(207, 159, 118);
+    cursor: pointer;
+    border-radius: 4px;    
+}
+
+
+/* Section 2 */
+.About{
+    height: 43rem;
+    
+    display: flex;
+    
+}
+.pic2{
+    height: 650px;
+    width: 35%;
+    margin-top: 80px;
+    margin-left: 50px;
+    
+}
+.kungfu{
+    
+    height: 60%;
+    width: 70%;
+    margin-left: 90px;
+    margin-top: 7%;
+}
+.kungfu h1{
+    margin-top: 7rem;
+    text-align: center;
+}
+.kungfu p{
+    width: 100%;
+    
+    line-height: 2;
+    margin-top: 20px;
+}
+.kungfu button{
+    margin-left: 40%;
+    margin-top: 30px;
+    padding: 10px 12px;
+    font-size: 20px;
+    background-color: rgb(201, 177, 141);
+}
+
+/* Section 3 */
+.Facility{
+    height: 43rem;
+    background-color: transparent;
+      
+}
+.Facility .pic3{
+    
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.Facility .pic3 img{
+    height: 15%;
+    width: 15%;
+    margin-top: 1.5rem;
+}
+.Facility .box-container{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    margin-top: 30px;
+
+}
+.Facility .box-container .box{
+    text-align: center;
+    margin-top: 5%;
+}
+.Facility .box-container .box h1{
+    line-height: 2;
+}
+.Facility .box-container .box p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+
+
+/* Section 4 */
+.Menu{
+    height: 43rem;
+    background-color: transparent;
+    
+}
+.Menu .pic4{
+    
+    text-align: center;
+    font-size: 25px;
+}
+.Menu .pic4 img{
+    height: 15%;
+    width: 15%;
+    margin-top: 1.5rem;
+}
+.slider{
+    height: 400px;
+    width: 320px;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 40%;
+    overflow: hidden;
+}
+.slides{
+    height: 200px;
+    width: 500%;
+    
+    display: flex;
+    
+}
+.slides input{
+    display: none;
+}
+.slide{
+    width: 20%;
+    transition: 2s;
+    float: left;
+}
+.slider h1{
+    text-align: center;
+}
+.slide img{
+    height: 350px;
+    width: 320px;
+}
+.navigation-manual{
+    position: absolute;
+    width: 320px;
+    margin-top: 200px;
+    justify-content: center;
+    display: flex;
+}
+.manual-btn{
+    border: 3px solid rgb(213, 5, 119);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 10px;
+    transition: 1s;
+}
+.manual-btn:hover{
+    background-color: rgb(0, 0, 0);
+}
+#radio1:checked ~ .first{
+    margin-left: 0%;
+}
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+#radio5:checked ~ .first{
+    margin-left: -80%;
+}
+#radio6:checked ~ .first{
+    margin-left: -100%;
+}
+.navigate-auto{
+    position: absolute;
+    
+    width: 320px;
+    justify-content: center;
+    margin-top: 400px;
+    display: flex;
+}
+.navigate-auto div{
+    border: 3px solid rgb(213, 5, 119);
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+    margin-left: 10px;
+}
+#radio1:checked ~ .navigate-auto .auto-btn1{
+    background-color: black;
+}
+#radio2:checked ~ .navigate-auto .auto-btn2{
+    background-color: black;
+}
+#radio3:checked ~ .navigate-auto .auto-btn3{
+    background-color: black;
+}
+#radio4:checked ~ .navigate-auto .auto-btn4{
+    background-color: black;
+}
+#radio5:checked ~ .navigate-auto .auto-btn5{
+    background-color: black;
+}
+#radio6:checked ~ .navigate-auto .auto-btn6{
+    background-color: black;
+}
+
+
+
+/* Section 5 */
+.Gallery{
+    height: 43rem;
+    background-color: transparent;
+    
+}
+.pic5{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 25px;
+}
+.Gallery .pic5 img{
+    height: 15%;
+    width: 15%;
+    margin-top: 1.5rem;
+}
+.Gallery .baleno{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    margin-left: 7%;
+    
+    
+    
+}
+.Gallery .baleno img{
+    height: 80%;
+    width: 80%;
+}
+
+/* Section 6 */
+.Team{
+    height: 43rem;
+    background-color:transparent;
+    
+}
+.Team .pic6{
+    text-align: center;
+    font-size: 25px;
+}
+.Team .pic6 img{
+    height: 15%;
+    width: 15%;
+    margin-top: 1.5rem;
+}
+.card{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+}
+.front{
+    height: 100%;
+    width: 15%;
+    background-color: rgb(214, 195, 157);
+    margin-left: 22px;
+    border-radius: 8px;
+}
+.front img{
+    height: 130px;
+    width: 200px;
+    margin-top: 10px;
+    margin-left: 13px;
+    border-radius: 5px;
+
+}
+.front h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.front button{
+    cursor: pointer;
+    margin-top: 15px;
+    margin-left: 32%;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    background-color: rgb(201, 155, 98);
+}
+.front button:hover{
+    background-color: rgb(224, 216, 202);
+}
+
+/* Section 7 */
+.Contact{
+    height: 43rem;
+    background-color:transparent;
+    
+}
+.Contact .pic7{
+    text-align: center;
+    font-size: 20px;
+}
+.Contact .pic7 img{
+    height: 15%;
+    width: 15%;
+    margin-top: 1.5rem; 
+}
+.Contact .vip img{
+    height: 50%;
+    width: 40%;
+    
+}
+.Contact .vip{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.Contact .vip form{
+    padding-bottom: 40rem;
+    border: 2px solid black;
+    padding: 2rem;
+    text-align: center;
+    
+}
+.Contact .vip form .box{
+    width: 100%;
+    
+    padding: 1.2rem;
+    font-size: 1rem;
+    color: black;
+    margin: 1rem 0;
+}
+.Contact .vip form .bn{
+    padding: 1rem;
+    background-color: bisque;
+    color: black;
+    cursor: pointer;
+}
+/* Section 8 */
+.Blog{
+    height: 43rem;
+    background-color:transparent
+    
+}
+.Blog .vlog{
+    display: flex;
+    gap: 7rem;
+    align-items: center;
+    margin-left: 22%;
+    
+    
+}
+.Blog .vlog .undo i{
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: rgb(210, 182, 105);
+    height: 6rem;
+    width: 6rem;
+    line-height: 6rem;
+    border-radius: 50%;
+    
+}
+.Blog .vlog .undo h1{
+    align-items: center;
+    line-height: 2;
+    margin-top: 5px;
+}
+.Blog .vlog .undo p{
+    line-height: 1.5;
+    text-align: center;
+}
+.Blog .cruze{
+    border: 3px solid black;
+    width: 90%;
+    margin-top: 8rem;
+    margin-left: 5%;
+}
+.Blog .thar{
+    margin-top: 3rem;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width:480px){
+    header{
+        
+        height: 200px;
+
+    }
+    .logo img{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    .navlinks{
+        display: grid;
+        line-height: 0;
+        left: 50%;
+        
+
+    }
+
+    .Home .karate h1{
+        margin-top: 40%;
+        width: 120%;
+        margin-left: 4%;
+    }
+    .Home .karate p{
+        margin-top: 20%;
+    }
+    .Home .karate button{
+        margin-top: 100%;
+        margin-left: 2%;
+    }
+    
+    .About{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .pic2 {
+        
+        width: 60%;
+        margin-left: 20%;
+        
+    }
+    .kungfu{
+    
+        height: 60%;
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+    .kungfu h1{
+        margin-top: 3px;
+        text-align: center;
+    }
+    .kungfu p{
+        text-align: center;
+    }
+    .kungfu button{
+        margin-left: 32%;
+        margin-top: 10px;
+        padding: 8px 10px;
+        font-size: 15px;
+    }
+    
+
+    .Facility .pic3 img{
+        
+        width: 35%;
+        margin-top: 1.5rem;
+    }
+    .Facility .pic3{
+        font-size: 12px;
+    }
+    .Facility .box-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .Facility .box-container .box{
+        text-align: center;
+        margin-top: 2px;
+    }
+    .Facility .box-container .box img{
+        width: 15%;
+        
+    }
+    .Facility .box-container .box h1{
+        line-height: 1.5;
+        font-size: 15px;
+    }
+    .Facility .box-container .box p{
+        font-size: 13px;
+        line-height: 1.3;
+    }
+    
+    .Menu .pic4{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .Menu .pic4 img{
+        width: 35%;
+    }
+    .Menu .slider{
+        margin-left: 2%;
+        margin-top: 10px;
+        
+    }
+    .slide img{
+        height: 180px;
+        width: 140px;
+        margin-left: 28%;
+    }
+    .slider h1{
+        text-align: center;
+        font-size: 20px;
+    }
+    #radio1:checked ~ .first{
+        margin-left: 1%;
+    }
+    .navigation-manual{
+        
+        margin-top: 50px;
+        
+    }
+    .navigate-auto{
+       
+        margin-top: 250px;
+        
+    }
+
+    .Gallery .pic5{
+        font-size: 12px;
+        margin-top: 0px;
+       
+    }
+    .Gallery .pic5 img{
+        width: 35%;
+    }
+    .Gallery .baleno{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .Gallery .baleno img{
+        height: 90%;
+        width: 35%;
+        margin-left: 28%;
+        margin-top: 0px;
+    }
+
+    .Team .pic6{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .Team .pic6 img{
+        width: 35%;
+    }
+    .card{
+        height: 300px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+        margin-top: 5px;
+        margin-left: 40%;
+    }
+    .front{
+        height: 105%;
+        width: 15%;
+        background-color: rgb(214, 195, 157);
+        margin-left: 5px;
+        border-radius: 8px;
+    }
+    .front img{
+        height: 50px;
+        width: 30px;
+        margin-top: 5px;
+        margin-left: 10px;
+        border-radius: 5px;
+    
+    }
+    .front h1{
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 7px;
+    }
+    .front button{
+        cursor: pointer;
+        margin-top: 0px;
+        margin-left: 5%;
+        padding: 0px;
+        border-radius: 8px;
+        color: black;
+        background-color: rgb(201, 155, 98);
+        font-size: 8px;
+    }
+
+    .Contact .pic7{
+        font-size: 12px;
+        margin-top: 0px;
+    }
+    .Contact .pic7 img{
+        width: 35%;
+    }
+    .Contact .vip{
+        gap: 2px;
+    }
+    .Contact .vip img{
+        
+        width: 50%;
+        margin-left: 25%;
+    }
+    .vip form{
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 28%;
+    }
+    .Contact .vip form .box{
+        padding: 8px;
+    }
+    .Contact .vip form .bn{
+        padding: 5px;
+    }
+
+    .Blog .vlog{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        align-items: center;
+        justify-content: center;
+        
+        
+    }
+    .Blog .vlog .undo i{
+        margin-top: 10px;
+        font-size: 50px;
+        text-align: center;
+        background-color: rgb(210, 182, 105);
+        height: 6rem;
+        width: 6rem;
+        line-height: 2;
+        border-radius: 50%;
+        
+    }
+}
